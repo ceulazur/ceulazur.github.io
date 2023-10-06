@@ -1,0 +1,162 @@
+<!--
+Instruções:
+1.Construir um site sobre tema genérico (tema de sua escolha).
+2.Seu site conterá um navegador superior móvel, um navegador
+esquerdo móvel e um espaço para conteúdo.
+3.O arquivo CSS deve ser separado do arquivo HTML, mas você é
+livre de colocar também CSS inline ou no próprio arquivo do
+HTML caso já tenha feito algo no arquivo CSS (somente nesse
+caso!).
+
+4. Você pode reusar material de outros trabalhos seus da
+DISCIPLINA desse semestre (cuidado com cópia de outros
+colegas. Sua prova será ZERADA).
+5. O site deve estar publicado no Github Pages (veja o vídeo da
+aula do dia 05 que explica como fazer isso).
+6. Cada componente está descrito a seguir.
+
+1.1. Navegador superior móvel
+a) Esse componente deve ocupar a largura inteira da página e conter
+3 botões lado a lado. (1 ponto)
+b) Ao clicar o mouse no botão do meio, um menu dropdown deve
+aparecer logo abaixo (1 ponto)
+(https://github.com/jeffersoncarvalho/ufc_2023_2/tree/main/LMS/P
+ROF/css/menu)
+c) TODOS os botões devem ser no estilo 3D
+(https://github.com/jeffersoncarvalho/ufc_2023_2/tree/main/LMS/P
+ROF/css3/11Botao3D) (1 ponto)
+2.1. Barra de navegação móvel lateral esquerda
+a) Sua barra deve conter 5 botões, ter altura de 1200px e largura de
+20vw (1 ponto)
+b) Os botões devem estar empilhados verticalmente (1 ponto)
+3.1. Conteúdo
+a) O espaço do conteúdo deve ter 80vw de largura, 1200px de altura
+e deve estar à direita do navegador lateral (1 ponto)
+b) O espaço do conteúdo deve ter um artigo com duas seções e
+também deve ter componente de loading como mostrado abaixo e
+ele deve rotacionar infinitamente, logo abaixo do artigo (2 pontos)
+(https://cssloaders.github.io) (escolha um dos códigos e explique
+todas as linhas em comentários)
+4.1. Responsividade.
+(https://github.com/jeffersoncarvalho/ufc_2023_2/tree/main/LMS/PROF/
+css3/10LayoutResponsivo) Caso sua tela tenha menos de 600px:
+a) A barra lateral deve se transformar em um menu que ocupa a
+largura inteira da tela, ter altura suficiente apenas para comportar
+os botões e deve se localizar logo abaixo da barra superior feita
+na primeira questão e acima do conteúdo (1 ponto)
+b) O conteúdo deve se posicionar no final da página e todos os
+outros componentes devem estar acima dele. (1 ponto)
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="./provinhaaa.css"/>
+    <!-- agora sim ficou como tudo tem que ser, tinha esquecido de linkar as paginas css e html kkkkkkkk tragic
+    todavia os botões nomes foram de base e os 1,2,3 e afins menos clicaveis e não alinhando com uns para baixo hmmm-->
+    <h1 style="color: green;"> Coisas que a Jhordanna Céulazur gosta </h1>
+
+    <title>ceulazur gostos</title>
+</head>
+<body>
+    <div class="top-nav">
+        <button class="b1">Jhordanna
+            <a>
+                <img src = 'j.jpeg' style = "max-width: 80px; max-height: 80px;" >
+            </a>
+        </button>
+
+        <button class="b1">Compras
+            <a>
+                <img src = 'u.jpg' style = "max-width: 80px; max-height: 80px;" >
+            </a>
+        </button>
+<!--tinha colocado um id dropdown aki em baixo, mas tirei que acho que não vai precisar não
+voltei com eles, ficou melhor e alterei a ideia animações e tirei esse espaçp branco todo até o artigo no index 2-->
+        <button class="b1"> Animações
+            <a>
+                <img src = 'ch.jpeg' style = "max-width: 80px; max-height: 80px;" >
+            </a>
+        </button>
+    
+<!--
+    exemplo w3
+     <style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div> 
+-->
+<!--
+    exemplo jefer
+-->
+        <!-- quero u=que esses links apareçam nos botões 5
+        mudei-->
+        <div class="dropdown-content" id="dropdown-menu">
+            <a href="https://www.youtube.com/@Ceulazur">Poesia</a>
+            <a href="https://github.com/ceulazur">Github</a>
+            <a href="https://letterboxd.com/ceulazur/">Letterboxd</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <button class="b2">Botão 1</button>
+        <button class="b2">Botão 2</button>
+        <button class="b2">Botão 3</button>
+        <button class="b2">Botão 4</button>
+        <button class="b2">Botão 5</button>
+    </div>
+    <div class="content">
+        <article>
+            <section>
+                <h1 style = "color:blue">A cor azul</h1>
+                <p style="color: #0084ff">
+                    <img src = 'p.jpeg' style = "max-width: 550px; max-height: 500px;" >
+                    <img src = 'gno.jpg' style = "max-width: 200px; max-height: 200px;" >
+                    <h1>
+
+                    </h1>
+                   <h4 style="color:#0099ff">
+                    E gatos...
+                   </h4> 
+                    <img src = 'ga.jpg' style = "max-width: 200px; max-height: 200px;" >
+                    azuis...
+                </p>
+            </section>
+            <section>
+                <h1>Animes e Mangás</h1>
+                Como por exemplo, Beserk, Keep Your Hands of Eizouken, One Piece, A sign of Afection, entre muitos outros...
+                <p>
+                    
+                </p>
+            </section>
+        </article>
+        <!--  tentativa de fazer o kerydo rodar, mas não estou visualizando, por mais que eu tenha feito de acordo com o ensinado
+        teneti usar div ao invés de span, mas nesse caso optei por seguir o código contido no link do loader
+    é realmente não sei porque parece que não tá indo, aaaaa 
+    não tava indo pq não tinha linkado os arquivos -->
+        <span class="loader"></span>
+    </div>
+</body>
+</html>
+<!--comentei demais e blablabla passsei para o index 2 para ficar certo e clean-->
